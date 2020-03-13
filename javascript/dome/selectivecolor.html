@@ -1,0 +1,36 @@
+<html>
+<head>
+<title></title>
+<script>
+
+window.onload=function(){
+btn=document.getElementsByClassName("demo");
+for(var i=0;i<btn.length;i++)
+{
+    btn[i].addEventListener("click",function (){
+        for(var j=0;j<btn.length;j++)
+        {
+            btn[j].style.color="black";
+            btn[j].style.backgroundColor="white";
+        }
+    this.style.color="yellow";
+    });
+
+    
+}
+  
+   
+
+}
+
+
+</script>
+</head>
+<body>
+   
+    <h1 class="demo">hello world</h1>
+    <h1 class="demo">hello world</h1>
+    <h1 class="demo">hello world</h1>
+    <h1 class="demo">hello world</h1>
+</body>
+</html>

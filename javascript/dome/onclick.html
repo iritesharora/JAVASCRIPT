@@ -1,0 +1,41 @@
+
+<html>
+    <head>
+    <title></title>
+    <script>
+        function demo()
+        {
+            h1s=document.getElementsByClassName("h");
+        h1=document.getElementById("d");
+        h1.style.color="red";
+        for(var i=0;i<h1s.length;i++){
+       h1s[i].style.color="blue";
+       h1s[i].style.textDecoration="underline";
+       h1s[i].style.backgroundColor="yellow";
+       //h1s[i].innerText="yellow";
+        }
+        }
+       
+    </script>
+    </head>
+    <body >
+        <button onblur="demo()">click here</button>
+        <!--
+         ondblclick
+         onmouseover
+         onmouseout
+         onmousemove
+         onfocus
+         onblur
+         input,select tags=>onchange
+         form tags=>onsubmit
+
+        -->
+        <h1>hello world</h1>
+        <h1 id="d">hello world</h1>
+        <h1>hello world</h1>
+        <h1 class="h">hey</h1>
+        <h1 class="h">hey</h1>
+    
+    </body>
+    </html>

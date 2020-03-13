@@ -1,0 +1,91 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <script>
+      
+      /* function f1(name1,name2)
+       {
+           alert("hello"+name1+"and"+name2);
+       }
+       f1("ritesh","jatin","jhjh");
+       f1("jatin");
+       f1(true,false);
+
+       function fun(name1,name2)
+       {
+           return("hello"+name1+"and"+name2);
+       }
+      data= fun("ritesh","jatin");
+       alert("Data: "+data);
+       function sayhi()
+       {
+           alert("hello");
+           alert(arguments[0]);
+           alert(arguments[1]);
+       }
+       sayhi();
+       sayhi("ritesh","jatin");*/
+       //data type function
+       function sayhi()
+       {
+           return "hello";
+          
+       }
+      /* alert(typeof sayhi());
+       test=sayhi;
+       alert(typeof test);
+       test();*/
+
+      //functions first property
+      /* function sayhi(name)
+       {
+           alert("hello "+name);
+       }
+       function caller(a,b)
+       {
+           alert(typeof a);
+           a(b);
+       }
+      caller(sayhi,"sachin"); //functional programming
+     //  caller(sayhi(),"sachin");  //this is not functional programmming */
+
+     //functions second property
+
+     /*function outer()
+     {
+         alert("this is outer");
+         function inner()
+         {
+             alert("this is inner");
+         }
+         inner();
+         inner();
+        
+     }
+     outer();*/
+
+     //third property of function
+
+     function outer()
+     {
+         alert("this is outer");
+         function inner()
+         {
+             alert("this is inner");
+         }
+         return inner;
+     }
+    test= outer();
+     alert(typeof test);
+     test();
+     test();
+
+
+     
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<script>
+   /* (function (name1)
+    {
+        alert("hello"+name1);
+    }) ("Ritesh");
+    var sayhi=function (name1){
+        alert("hi "+name1);
+    }
+    sayhi("Ritesh");
+    sayhi("JAtin");
+    //array of functions
+    var arr=[
+          function (){alert("hi this is deposit");},
+         function (){alert("hi this is witdraw");},
+       function (){alert("hi this is show");}
+
+    ];
+    arr[0](); 
+    arr[1](); 
+ //array of functions using keys....
+    var arr={
+          deposit:function (){alert("hi this is deposit");},
+          withdraw:function (){alert("hi this is witdraw");},
+          show:function (){alert("hi this is show");}
+
+    };
+    arr.deposit();
+    arr["withdraw"]();
+    arr.show(); */
+
+    function outer()
+    {
+        var count=0;
+       return function (){
+            count+=1;
+            alert(count);
+        }
+    }
+    var hello=outer();
+    hello();
+    hello();
+    hi=outer();
+    hi();
+    hi();
+</script>
+</body>
+</html>

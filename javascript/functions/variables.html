@@ -1,0 +1,40 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+    <script>
+ 
+
+ 
+ /*function outer()
+ {
+    var data="world";
+     function inner()
+     {
+        
+         function innermost()
+         {
+            alert(data);
+         }
+        innermost();
+     }                            //concept of lexical scoping....
+     inner();
+ }
+ outer();*/
+
+//acessesing the local variables of outer function
+function outer()
+ {
+    var data="world";
+     function inner()
+     {
+        
+         alert("data is: "+data);
+     }                          
+     return inner;
+ }
+ var demo=outer();
+ demo();
+    </script>
+</body>

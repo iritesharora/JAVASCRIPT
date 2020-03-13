@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>BAnk</title>
+</head>
+<body>
+    <script>
+      function wallet(balance,name) //factory function which returns objects and having objects...
+      {
+          
+         
+         var arr={deposite:function (amount)
+          {
+              alert("depositing money");
+              balance=balance+amount;
+              alert("balance is: "+balance);
+          },
+         withdraw: function (amount2)
+          {
+              if(amount2>balance)
+              {
+                  alert("withdraw amount not be greater than balance");
+              }
+              else{
+                  alert("withdrawing money");
+                  balance=balance-amount2;
+                  alert("balance is: "+balance);
+              }
+          },
+        show: function ()
+          {
+          alert("balance of user: "+name+" is "+balance);
+          }};
+         return arr;
+           
+      }
+      arr=wallet(1000,"Ritesh");
+      arr.deposite(500);
+      arr.withdraw(200);
+      arr.show();
+      
+
+     /* arr=wallet(1000,"jatin");
+      arr[0](500);
+      arr[1](200);
+      arr[2]();*/
+     
+
+
+    </script>
+</body>
+</html>

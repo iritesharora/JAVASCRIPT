@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>BAnk</title>
+</head>
+<body>
+    <script>
+      function wallet(balance,name) // module design which returns array of functions...
+      {
+          
+         
+         var arr=[function (amount)
+          {
+              alert("depositing money");
+              balance=balance+amount;
+              alert("balance is: "+balance);
+          },
+          function (amount2)
+          {
+              if(amount2>balance)
+              {
+                  alert("withdraw amount not be greater than balance");
+              }
+              else{
+                  alert("withdrawing money");
+                  balance=balance-amount2;
+                  alert("balance is: "+balance);
+              }
+          },
+         function ()
+          {
+          alert("balance of user: "+name+" is "+balance);
+          }];
+         return arr;
+           
+      }
+      arr=wallet(1000,"Ritesh");
+      arr[0](500);
+      arr[1](200);
+      arr[2]();
+      
+
+     /* arr=wallet(1000,"jatin");
+      arr[0](500);
+      arr[1](200);
+      arr[2]();*/
+     
+
+
+    </script>
+</body>
+</html>

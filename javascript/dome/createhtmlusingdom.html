@@ -1,0 +1,31 @@
+<html>
+<head>
+<title></title>
+<script>
+    names=["Ritesh","Jatin","Shubham"];
+    function demo()
+    {
+        var main=document.getElementById("main");
+        h1s="";
+        for(var i=0;i<names.length;i++)
+        {
+            h1s+="<h1>hello "+names[i]+"</h1>";
+        }
+        alert(h1s);
+        main.innerHTML=h1s;
+    }
+/*function demo()
+{
+    var main=document.getElementById("main");
+    var h1="<h1>hello world</h1>";
+    main.innerHTML+=h1;
+}*/
+</script>
+</head>
+<body>
+<button onclick="demo()">click here</button>
+<div id="main">
+
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<script>
+      obj=[
+        {pid:123,pname:"soap",brand:"nike",discount:20,pcost:20},
+        {pid:321,pname:"shirt",brand:"nike",discount:40,pcost:2000},
+        {pid:678,pname:"pc",brand:"hp",discount:30,pcost:20000},
+        {pid:456,pname:"laptop",brand:"dell",discount:50,pcost:50000},
+        {pid:987,pname:"USB",brand:"UBON",discount:5,pcost:200}
+      ];
+      input=prompt("enter your choice:")
+      switch(input)
+      {
+          case 1:
+           obj.sort(function (a,b)
+           {if(a.pcost==b.cost)
+            return 0;
+            else if(a.cost>b.cost)
+            return 1;
+            else
+            return -1;
+           }
+           )
+           console.log(obj);
+      }
+
+
+
+</script>
+</body>
+</html>

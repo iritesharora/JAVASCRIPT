@@ -1,0 +1,30 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <script>
+       
+        function hello()
+        {
+            var i=0;
+            function inner()   //clousre (function inside a function)
+                              //when a fun. finishes its execution all its local variables are deleted from the stack memory..
+            {
+              i++;
+              alert(i);
+            }
+          return inner;
+           
+           
+        }
+       var a= hello();
+       a();
+       a();
+       a();       
+
+        </script>
+        </body>
+        </html>

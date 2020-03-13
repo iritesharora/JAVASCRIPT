@@ -1,0 +1,49 @@
+<html>
+<head>
+<title></title>
+
+
+</head>
+<body>
+    <script>
+        /*arr=[1,"hello",null,true];
+        alert(arr[0]);
+        alert(arr[1]);
+        alert(arr[2]);
+        for(var i=0;i<arr.length;i++)
+        {
+            alert(arr[i]);
+        }*/
+       /* obj={fname:"Ritesh Arora",city:"Punjab"};
+        alert(obj.fname);
+        alert(obj["city"]);
+        for(i in obj)
+        {
+            alert(i+" "+obj[i]);
+        }*/
+        arr=["Ritesh","jatin"];
+        alert(arr);
+        //inserting at last of the arrary
+        arr.push("shubham");
+        alert(arr);
+        //removing from last of the array
+        alert("removing is : "+arr.pop());
+        alert(arr);
+        //inserting element on the top of array
+        arr.unshift("navneet");
+        alert(arr);
+        //removing element from the of the array
+        alert("removing "+arr.shift());
+        alert(arr);
+        //adding element to the array
+        arr.splice(1,0,"ss","xx");//for insertion second parameter is always zero..
+        alert(arr);
+        //removing element from particular position
+        removed=arr.splice(1,2);//first parameter starting index, and second parameter is ending index..
+        alert(arr);
+        //replacing element in an array
+        replace=arr.splice(1,2,"hi","bie");
+        alert("repalced: "+arr);
+    </script>
+</body>
+</html>

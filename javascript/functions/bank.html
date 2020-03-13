@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>BAnk</title>
+</head>
+<body>
+    <script>
+      function wallet(balance,name)
+      {
+          
+          function deposit(amount)
+          {
+              alert("depositing money");
+              balance=balance+amount;
+              alert("balance is: "+balance);
+          }
+          function withdraw(amount2)
+          {
+              if(amount2>balance)
+              {
+                  alert("withdraw amount not be greater than balance");
+              }
+              else{
+                  alert("withdrawing money");
+                  balance=balance-amount2;
+                  alert("balance is: "+balance);
+              }
+          }
+         function show()
+          {
+          alert("balance of user: "+name+" is "+balance);
+          }
+           
+         /* function transfer(amount,username)
+          {
+            var ar;
+           
+           if(username=="jatin")
+           {
+               deposit(amount);
+               alert("Money transferring to: "+username);
+               a=deposit(amount);
+               alert("updated balance is: "+ar[0]);
+           }
+          else
+           {
+               deposit(amount);
+               alert("Money transferring to: "+username);
+               ar[1](deposit(amount));
+               alert("updated balance is: "+ar[1]);
+           }
+
+          }*/
+         var arr=[deposit,withdraw,show,transfer];
+         return arr;
+           
+      }
+      arr=wallet(1000,"Ritesh");
+      arr[0](500);
+      arr[1](200);
+      arr[2]();
+      arr[3](500,"jatin");
+
+      arr=wallet(1000,"jatin");
+      arr[0](500);
+      arr[1](200);
+      arr[2]();
+      arr[3](200,"Ritesh");
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<script>
+    arr=[
+        {team:"india",fname:"sachin",lname:"tendulkar"},
+        {team:"india",fname:"rohit",lname:"sharma"},
+        {team:"india",fname:"yuvraj",lname:"singh"},
+        {team:"australia",fname:"adam",lname:"gilchrist"},
+        {team:"sri-lanka",fname:"kumar",lname:"snagakara"},
+        {team:"south africa",fname:"david",lname:"miller"}
+    ];
+    console.log(arr);
+    function filt(a)
+    {
+        return a.team=="india"
+    }
+    newarr=arr.filter(filt);
+    console.log(newarr);
+ 
+   /* function sorting(n1,n2)
+    { 
+        n1=n1.fname.toUpperCase();
+        n2=n2.fname.toUpperCase();
+        console.log("sorting called for: "+n1+" , "+n2);
+        if(n1==n2)
+            return 0;
+        else if(n1>n2)
+              return 1;
+        else
+               return -1;
+    }
+     
+    arr.sort(sorting); //working sorting passing funcion inside a function..
+    console.log(arr);   */
+</script>
+</body>
+</html>

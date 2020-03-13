@@ -1,0 +1,30 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<script>
+    arr=["ritesh","akash","jatin","shubham"];
+    alert(arr);
+    arr.sort();
+    alert(arr);
+    arr=[1,6,3,266,4,53,5,8,9999,0];
+    alert(arr);
+    arr.sort(); //not working in case of numeric values..
+    alert(arr);
+    function sorting(n1,n2)
+    {
+        console.log("sorting called for: "+n1+" , "+n2);
+        if(n1==n2)
+            return 0;
+        else if(n1<n2)
+              return 1;
+        else
+               return -1;
+    }
+    alert(arr);
+    arr.sort(sorting); //working sorting passing funcion inside a function..
+     alert(arr);    
+</script>
+</body>
+</html>
